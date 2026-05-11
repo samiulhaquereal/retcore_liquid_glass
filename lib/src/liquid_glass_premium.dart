@@ -205,15 +205,15 @@ class LiquidGlassPosition {
 
   /// Resolves the position to an absolute Offset based on the container size.
   Offset resolve(Size containerSize, Size lensSize) {
-    if (_offset != null) return _offset!;
+    if (_offset != null) return _offset;
     if (_alignment != null) {
       // Calculate center of the container
       final centerX = containerSize.width / 2;
       final centerY = containerSize.height / 2;
 
       // Calculate the alignment offset from the center
-      final shiftX = (containerSize.width / 2) * _alignment!.x;
-      final shiftY = (containerSize.height / 2) * _alignment!.y;
+      final shiftX = (containerSize.width / 2) * _alignment.x;
+      final shiftY = (containerSize.height / 2) * _alignment.y;
 
       // Top-left of the lens to center it on the alignment point
       return Offset(
@@ -425,10 +425,10 @@ class _LensPainter extends CustomPainter {
     shader.setFloat(2, refraction);
     shader.setFloat(3, magnification);
     shader.setFloat(4, chromatic);
-    shader.setFloat(5, tint.red   / 255.0);
-    shader.setFloat(6, tint.green / 255.0);
-    shader.setFloat(7, tint.blue  / 255.0);
-    shader.setFloat(8, tint.alpha / 255.0);
+    shader.setFloat(5, tint.r);
+    shader.setFloat(6, tint.g);
+    shader.setFloat(7, tint.b);
+    shader.setFloat(8, tint.a);
     // Normalized background coordinates (0.0 to 1.0)
     final bgW = bgLogicalSize.width == 0 ? 1.0 : bgLogicalSize.width;
     final bgH = bgLogicalSize.height == 0 ? 1.0 : bgLogicalSize.height;

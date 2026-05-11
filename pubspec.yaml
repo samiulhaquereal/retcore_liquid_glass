@@ -1,0 +1,25 @@
+name: retcore_liquid_glass
+description: A premium Liquid Glass effect for Flutter. Includes fluid noise shaders, physically accurate refraction, and high-performance backdrop effects.
+version: 0.0.1
+homepage: https://github.com/samiulhaquereal/retcore_liquid_glass
+repository: https://github.com/samiulhaquereal/retcore_liquid_glass
+issue_tracker: https://github.com/samiulhaquereal/retcore_liquid_glass/issues
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  shaders:
+    - shaders/liquid_noise.frag
+    - shaders/liquid_lens.frag

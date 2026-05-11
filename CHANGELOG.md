@@ -1,3 +1,7 @@
+## 0.0.2
+
+* Added high-quality preview screenshots to README.
+
 ## 0.0.1
 
 * **Initial Release**: High-performance, physically accurate Liquid Glass effect.

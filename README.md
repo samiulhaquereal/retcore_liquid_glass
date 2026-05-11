@@ -2,7 +2,8 @@
 
 A high-performance, physically accurate glass refraction package for Flutter. Built entirely with raw GLSL shaders, `retcore_liquid_glass` achieves the holy grail of modern UI design: real-time, interactive, incredibly realistic frosted and liquid glass effects that bend the light of widgets underneath them.
 
-![Liquid Glass Example](https://images.unsplash.com/photo-1485470733090-0aae1788d5af?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8fDA%3D)
+![Liquid Glass Example 1](screenshots/preview_1.jpg)
+![Liquid Glass Example 2](screenshots/preview_2.jpg)
 
 ## Features
 
